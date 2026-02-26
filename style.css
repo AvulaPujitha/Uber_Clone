@@ -91,7 +91,7 @@ nav > h1 {
 }
 
 nav > h1:hover {
-    background-color: var#D1D1D1;
+    background-color: #D1D1D1;
     border-radius: 50%;
     padding: 8px 0px;
     transition: 0.3s ease;
@@ -110,7 +110,7 @@ nav > ul > li {
 
 nav > ul > li > a {
     text-decoration: none;
-    color: var(--color-gray);
+    color: #555;
     font-size: 0.9rem;
 }
 
