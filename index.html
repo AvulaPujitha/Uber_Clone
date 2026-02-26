@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <header>
+    <div id="header-left" class="marginbox-left">
+      <h1>Uber</h1>
+
+      <!-- Navigation links -->
+      <div class="header-left-nav">
+        <a href="">Ride</a>
+        <a href="">Drive</a>
+        <a href="">Business</a>
+        <a href="">About</a>
+      </div>
+    </div>
+
+    <div id="right-header" class="marginbox-right">
+      <div>
+        <a href="">
+          <span style="margin-right: 5px;">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+          </span>
+          EN
+        </a>
+      </div>
+
+      <div><a href="">Help</a></div>
+      <div><a href="">Login</a></div>
+      <button>Sign Up</button>
+    </div>
+  </header>
+
+  <nav>
+    <h1 class="marginbox-left">Ride</h1>
+
+    <ul class="marginbox-right">
+      <li><a href="">Request a ride</a></li>
+      <li><a href="">Reserve a ride</a></li>
+      <li><a href="">See prices</a></li>
+      <li><a href="">Explore ride options</a></li>
+      <li><a href="">Airport rides</a></li>
+    </ul>
+  </nav>
+
+  <section id="Hero-section">
+
+    <div id="left-hero" class="hero-box marginbox-left">
+      <p>
+        <span>
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+        </span>
+        Vadodara, IN
+        <span><a href="">Change city</a></span>
+      </p>
+
+      <h1>Request a ride for now or later</h1>
+
+      <p>
+        <span class="tag-hero">
+          <i class="fa fa-tag" aria-hidden="true"></i>
+        </span>
+        Up to 50% off your first 5 Uber rides. T&Cs apply.*
+        <br>
+        *Valid within 15 days of signup.
+      </p>
+
+      <div class="hero-location">
+        <div class="hero-pickup">
+          <span class="in-pick">
+            <i class="fa fa-circle-o" aria-hidden="true"></i>
+          </span>
+          <input type="text" placeholder="Pickup location">
+        </div>
+
+        <div class="hero-border"></div>
+
+        <div class="hero-drop">
+          <span class="in-drop">
+            <i class="fa fa-stop-circle-o" aria-hidden="true"></i>
+          </span>
+          <input type="text" placeholder="Dropoff location">
+        </div>
+      </div>
+
+      <div>
+        <button class="btn primary-btn">See prices</button>
+        <button class="second-btn">Schedule for later</button>
+      </div>
+    </div>
+
+    <div id="right-hero" class="hero-box marginbox-right">
+      <img
+        src="https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format=auto/width=552/height=552/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy80MmEyOTE0Ny1lMDQzLTQyZjktODU0NC1lY2ZmZmUwNTMyZTkucG5n"
+        alt="">
+    </div>
+
+  </section>
+
+
+  <section id="suga">
+    <div id="sug-main">
+<h1>Suggestions</h1>
+<div class="sug-big-box">
+  <div class="suga-box">
+    <div>
+      <h3>Ride</h3>
+      <p>Go anywhere with Uber. Request a<br> ride, hop in, and go.</p>
+      <button>Details</button>
+      </div>
+      <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ7Kt54z31PkbdlqmqnyWnaCjvcLYRG-T_8Q&s" alt="" width=150px height=150px>
+      </div>
+  </div>
+  <div class="suga-box">
+    <div>
+      <h3>reserve</h3>
+      <p>Reserve your ride in advance so you <br>can relax on the day of your trip.</p>
+      <button>Details</button>
+      </div>
+      <div>
+        <img src="data:image/jpeg;base64,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" alt="" width=150px height=150px>
+      </div>
+    </div>
+  <div class="suga-box">
+    <div>
+    <h3>Intersity</h3>
+      <p>Get convenient, affordable <br>outstation cabs anytime at your...</p>
+      <button>Details</button>
+      </div>
+      <div>
+        <img src="data:image/jpeg;base64,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" alt="" width="150px"height="150px">
+      </div>
+  </div>
+  <div class="suga-box">
+    <div>
+    <h3>Rentals</h3>
+      <p>Request a trip for a block of time and <br>make multiple stops.</p>
+      <button>Details</button>
+      </div>
+      <div>
+      <img src="data:image/jpeg;base64,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" alt="" width="150px" height="150px">
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+  <section class="plan">
+
+  <h1 class="plan-h1">Plan for later</h1>
+
+  <div class="plan-main">
+
+    <!-- LEFT CARD -->
+    <div class="left-plan">
+      <h2>Get your ride right<br>with Uber Reserve</h2>
+
+      <p>Choose date and time</p>
+
+      <div class="input-row">
+        <div class="input-box">
+          <span>
+            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+          </span>
+          <input type="text" placeholder="dd-mm-yyyy">
+        </div>
+
+        <div class="input-box">
+          <span>
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+          </span>
+          <input type="text" placeholder="Time">
+        </div>
+      </div>
+
+      <button class="next-btn">Next</button>
+
+      <div>
+        <img src="https://tb-static.uber.com/prod/udam-assets/5152cc71-a5b0-4fbd-aeb8-bee896efcd48.png">
+      </div>
+
+
+
+    </div>
+
+    <!-- RIGHT BENEFITS -->
+    <div class="right-plan">
+      <h3>Benefits</h3>
+
+      <div class="benefit">
+        <span>
+          <i class="fa fa-calendar-o" aria-hidden="true"></i>
+        </span>
+        <p>Choose your exact pickup time up<br> to 90 days in advance.</p>
+
+      </div>
+
+      <div class="benefit" >
+
+        <span>
+          <i class="fa fa-clock-o" aria-hidden="true"></i>
+        </span>
+        <p>Extra wait time included to meet<br> your ride.</p>
+
+      </div>
+
+      <div class="benefit">
+        <span>
+          <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+        </span>
+        <p>Cancel at no charge up to 60<br> minutes in advance.</p>
+      </div>
+
+      <a href="#">See terms</a>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="brain">
+
+  <div class="left-brain">
+    <img alt="" src="https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format=auto/width=552/height=311/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy9mNzdhYTM4MC1hMzc4LTQ3YmYtOGI4OC1hYWJhMTU4N2VmZGQucG5n" aria-hidden="true" role="presentation" alt="">
+  </div>
+
+  <div class="right-brain">
+    <h1>Ride with friends <br>seamlessly</h1>
+    <p>
+      Riding with friends just got easier: set up a group ride in the<br>
+      Uber app, invite your friends, and arrive at your destination.<br>
+      Friends who ride together save together.
+    </p>
+
+    <a href="#">Learn more</a>
+  </div>
+
+
+</section>
+
+
+
+
+<section class="travel-section">
+  <h1 class="section-title">Use the Uber app to help you travel your way</h1>
+
+  <div class="card-container">
+
+    <!-- CARD 1 -->
+    <div class="travel-card">
+      <img
+        class="card-img"
+        src="https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format=auto/width=552/height=552/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy81NGY2MDE2MS1jZjZiLTQ0MDEtYTMwOS04YmIxOTZjMDAxNGMuanBn"
+        alt="Ride options"
+      >
+
+      <h3 class="card-title">Ride options</h3>
+
+      <p class="card-text">
+        There's more than one way to move with Uber, no<br>
+        matter where you are or where you’re<br>
+        headed next.
+      </p>
+
+      <button class="searchbtn">Search ride options</button>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="travel-card">
+      <img
+        class="card-img"
+        src="https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format=auto/width=552/height=552/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy9mOWJhMjdjNC02NjVjLTRjY2EtODE2MS05ZTNmODdmNDk5OTQucG5n"
+        alt="Airports"
+      >
+
+      <h3 class="card-title">700+ airports</h3>
+
+      <p class="card-text">
+        You can request a ride to and from most major<br>
+        airports. Schedule a ride to the airport for one<br>
+        less thing to worry about.
+      </p>
+
+      <button class="searchbtn">Search airports</button>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="travel-card">
+      <img
+        class="card-img"
+        src="https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format=auto/width=552/height=552/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy9iOGMzOWRlMC02ZTEzLTQ4NWItYmE0NS02NjUxMTE3MGM2MmEuanBn"
+        alt="Cities"
+      >
+
+      <h3 class="card-title">15,000+ cities</h3>
+
+      <p class="card-text">
+        The app is available in thousands of cities<br>
+        worldwide, so you can request a ride even<br>
+        when you're far from home.
+      </p>
+
+      <button class="searchbtn">Search cities</button>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="business">
+  <div class="business-left">
+    <h1>Looking for business<br>solutions?</h1>
+    <p>Get information about how companies leverage<u>Uber for<br>Business</u>:</p>
+    <ul>
+      <li><a href="#">Business travel</a></li>
+      <li><a href="#">Courtesy rides</a></li>
+      <li><a href="#">Meal programs</a></li>
+      <li><a href="#">Item delivery</a></li>
+    </ul>
+    <div class="btn-group">
+      <button>Get started</button>
+      <a href="#">Check out our solutions</a>
+    </div>
+  </div>
+  <div class="business-right">
+    <img src="https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format=auto/width=1152/height=648/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy9kNjQ4ZjViNi1iYjVmLTQ1MGUtODczMy05MGFlZmVjYmQwOWUuanBn"
+      alt="Business Image">
+  </div>
+</section>
+<section class="faq">
+  <h1>Frequently asked questions</h1>
+  <details>
+    <summary>Can I have a lost item delivered to me?</summary>
+    <p>The Uber app helps provide a delivery solution that can save you a trip across town, whether it’s for a last-minute birthday gift or your forgotten keys.<br>Just choose Package in the Uber app.</p>
+    <a href="#">Get details</a>
+  </details>
+  <details>
+    <summary>Can I rent a car using Uber?</summary>
+    <p>Yes. <u>Find out more </u> how car rentals work.</p>
+  </details>
+  <details>
+    <summary>Can I request a ride that picks up friends in different locations?</summary>
+    <p>Yes. Set up a group ride in the Uber app, invite your friends, and arrive at your destination together.</p>
+    <a href="#">Learn more</a>
+  </details>
+  <details>
+    <summary>Can I request a taxi on Uber?</summary>
+    <p>Uber makes it easy to get a taxi nearby in the cities where Uber Taxi is available. There’s no need to find a cab stand, hail a cab on the street, or even call <br>the local cab company. Instead, you can use the Uber app or website to request a taxi in just a few taps or clicks.</p>
+    <a href="#">Learn about requesting a taxi</a>
+  </details>
+  <details>
+    <summary>Is there an Uber ride option for 5 people?</summary>
+    <p>Request UberXL for a van or SUV that fits up to 6 people at an affordable price. It’s perfect for a family trip or a ride to the airport.</p>
+    <a href="#">Get details about UberXL</a>
+</section>
+<section class="qr-uber">
+  <h1>Do more in the app</h1>
+  <div class="qr-data">
+    <div class="card">
+      <div class="card-left">
+        <img src="https://cn-geo1.uber.com/image-proc/crop/resizecrop/udam/format=auto/width=2304/height=2304/srcb64=aHR0cHM6Ly90Yi1zdGF0aWMudWJlci5jb20vcHJvZC91ZGFtLWFzc2V0cy9hNTk5ODZhZC0wZDlmLTQzOTYtODUzOS0zODliY2U5N2Y1NzkucG5n">
+        <div>
+          <h2>Download the Uber app</h2>
+          <p>Scan to download</p>
+        </div>
+      </div>
+      <span class="arrow"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+    </div>
+    <div class="card">
+      <div class="card-left">
+        <img src="https://tb-static.uber.com/prod/udam-assets/e24f1914-1e23-4896-ad77-22e88c37c2f9.svg">
+        <div>
+          <h2>Sign up to ride</h2>
+        </div>
+      </div>
+      <span class="arrow"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+    </div>
+  </div>
+</section>
+<section class="theory">
+  <div class="theory-con">
+    <p>*Join the millions of riders who trust Uber for their everyday travel needs. Get doorstep pickup and dropoff to your chosen destination at the tap of a button. Select from a wide <br>range of affordable options, such as Uber Auto, Uber Moto, and Cabs.</p>
+    <p>Limited-period offer- Discount on first 5 trips (cab or moto) completed within 15 days of signing up. The offer is valid only for first-time users only. The promotion shall apply <br>automatically to eligible rides. Download the Uber app now to request your first ride.</p>
+    <p>Discounts applicable - (i) For cab rides- 25% discount (maximum discount of INR 75 per ride) (ii) For moto rides- 50% discount (maximum discount of INR 50 per ride)</p>
+    <p>This offer cannot be combined with any other offers or promo codes.</p>
+    <p>The offer is non-transferrable and limited to one per user/account.</p>
+    <p>Uber reserves the right to alter, suspend or withdraw the promotion offer in the future in its sole discretion without any prior notice. Terms and conditions apply.
+  </div>
+  <div class="last-line">
+<p>Certain requirements and features vary by country, region, and city.</p>
+</div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <h2 class="logo">Uber</h2>
+    <a href="#" class="help-link">Visit Help Center</a>
+  </div>
+  <div class="footer-links">
+    <div class="footer-col">
+      <h3>Company</h3>
+      <a href="#">About us</a>
+      <a href="#">Our offerings</a>
+      <a href="#">Newsroom</a>
+      <a href="#">Investors</a>
+      <a href="#">Blog</a>
+      <a href="#">Careers</a>
+      <a href="#">Uber One</a>
+    </div>
+    <div class="footer-col">
+      <h3>Products</h3>
+      <a href="#">Ride</a>
+      <a href="#">Drive</a>
+      <a href="#">Eat</a>
+      <a href="#">Uber for Business</a>
+      <a href="#">Uber Freight</a>
+      <a href="#">Gift cards</a>
+      <a href="#">Uber Health</a>
+    </div>
+    <div class="footer-col">
+      <h3>Global citizenship</h3>
+      <a href="#">Safety</a>
+      <a href="#">Sustainability</a>
+    </div>
+    <div class="footer-col">
+      <h3>Travel</h3>
+      <a href="#">Reserve</a>
+      <a href="#">Airports</a>
+      <a href="#">Cities</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="socials">
+      <i class="fa fa-linkedin"></i>
+      <i class="fa fa-youtube-play"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-twitter"></i>
+    </div>
+    <div class="location">
+      <span><i class="fa fa-globe" aria-hidden="true"></i> English</span>
+      <span><i class="fa fa-map-marker" aria-hidden="true"></i> Vadodara</span>
+    </div>
+
+    
+  </div>
+  <div class="footer-store">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg">
+    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg">
+  </div>
+  <div class="copy">
+    <div class="copyright">
+      <p>&copy; 2026 Uber Technologies Inc</p>
+    </div>
+    <div class="terms">
+      <a href="#">Privacy</a>
+      <a href="#">Accessibility</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
